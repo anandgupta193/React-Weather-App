@@ -1,6 +1,6 @@
 var React = require('react');
 var {Link, IndexLink} = require('react-router');
-var IPInfo = require('../api/ipInfo.jsx');
+var IPInfo = require('ipInfo');
 var openWeatherMap = require('../api/openWeatherMap.jsx');
 
 var Nav = React.createClass({

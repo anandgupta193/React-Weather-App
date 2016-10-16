@@ -4,7 +4,7 @@
   "description": "Simple React App",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -w app/tests/setup.js app/tests/**/*.spec.js",
+    "test": "mocha-webpack --webpack-config webpack.config-test.js \"app/tests/**/*.spec.js\"",
     "start": "node server.js"
   },
   "author": "Brandon Morelli",
@@ -30,12 +30,14 @@
     "jquery": "^2.2.1",
     "jsdom": "^9.6.0",
     "mocha": "^3.1.0",
+    "mocha-webpack": "^0.7.0",
     "moment": "^2.15.1",
     "node-sass": "^3.4.2",
     "react-addons-test-utils": "^15.3.2",
     "sass-loader": "^3.1.2",
     "script-loader": "^0.6.1",
     "style-loader": "^0.13.0",
-    "webpack": "^1.12.13"
+    "webpack": "^1.12.13",
+    "webpack-node-externals": "^1.5.4"
   }
 }

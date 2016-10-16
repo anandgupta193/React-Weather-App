@@ -12,3 +12,6 @@ npm-debug.log*
 
 # Editors
 .vscode
+
+#Temporary Folder
+.tmp
